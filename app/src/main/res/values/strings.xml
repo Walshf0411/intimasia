@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">INTIMASIA</string>
+    <string name="login_heading">Login</string>
+    <string name="phone_number_hint">Enter Phone number(+91)</string>
+    <string name="registration_heading">Register</string>
+    <string name="name_label_text">*Full Name:</string>
+    <string name="email_label_text">*Email:</string>
+    <string name="phone_number_label_text">*Phone No:</string>
+    <string name="title_activity_home_page">Intimasia Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">www.peppermintcommunitcations.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="whatsapp_phone_number_label_text">*WhatsApp No:</string>
+    <string name="dob_label_text">*DOB:</string>
+    <string name="country_label_text">*Country:</string>
+    <string name="state_label_text">*State:</string>
+    <string name="city_label_text">*City:</string>
+    <string name="user_category_selection_heading">Specify User Category</string>
+    <string name="submit_button_text">Submit</string>
+    <string name="company_name_label_text">*Company/Store Name:</string>
+    <string name="company_website_label_text">*Company Website:</string>
+    <string name="I_dont_have_a_url_label_text">I don\'t have a company/store website.</string>
+    <string name="address_label_text">*Address:</string>
+    <string name="street_label_text">Street/Road:</string>
+    <string name="postal_code_label_text">*Zipcode:</string>
+    <string name="designation_label_text">*Designation:</string>
+    <string name="others_label_text">*Others:</string>
+    <string name="publication_label_text">*Which Publication You Cover?:</string>
+    <string name="what_brought_to_intimasia_label_text">What brings you to initimasia?</string>
+    <string name="how_did_you_get_to_know_about_intimasia">How did you get to know about Intimasia?</string>
+    <string name="business_intrest_label">Business Interest</string>
+    <string name="networking_label">Networking</string>
+    <string name="market_survey_label">Market Survey</string>
+    <string name="product_knowledge_label">Product Knowledge</string>
+    <string name="first_time_question_label">*Is this your first time to Initimasia?</string>
+    <string name="subscribe_question_label">*Would you like to subscribe yourself to Inner Secrets Magazine
+        and upgrade to VIP visitor?</string>
+    <string name="suggest_intimasia_label">*Would you like to suggest initimasia to anyone?</string>
+    <string name="terms_checkbox">I agree that the above information may be used by Intimasia India
+        in all of their databases for business matching and trade promotional activities and for any other purposes.</string>
+    <string name="yes_label">Yes</string>
+    <string name="no_label">No</string>
+    <string name="subscribing_details1">Subscribe to Inner Secrets Magazine : </string>
+    <string name="subscribing_details2">Call Us: 75063 99950</string>
+    <string name="subscribing_details3">Email Us: subscriptions@peppermint.co.in</string>
+    <string name="lingere_label">Lingere</string>
+    <string name="sleepwear_label">Sleepwear</string>
+    <string name="socks_stockings_label">Socks and Stockings</string>
+    <string name="undergarments_label">Undergarments</string>
+    <string name="loungewear_label">Loungewear</string>
+    <string name="maternity_wear_label">Maternity Wear</string>
+    <string name="swimwear_label">Swimwear</string>
+    <string name="active_wear_label">Active Wear</string>
+    <string name="thermals_label">Thermals</string>
+    <string name="shape_wear_label">Shapewear</string>
+    <string name="leggings_label">Leggings</string>
+    <string name="intimate_wear_categories_label">Intimate Wear Categories:</string>
+    <string name="homepage_heading1">India\'s largest</string>
+    <string name="homepage_heading2">Intimate Wear Show</string>
+    <string name="intimasia_base_domain">www.intimasia.co.in/api</string>
+    <string name="preference_file_key">shared_preferences</string>
+    <string name="intimasia_images_link">www.intimasia.co.in/app_images</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sms_service_base_domain">www.smsjust.com/sms/user/urlsms.php</string>
+
+    <string name="title_activity_floor_plan">FloorPlan</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

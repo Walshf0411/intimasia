@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_floor_plan"
+            android:icon="@drawable/ic_floor_plan"
+            android:title="Floor Plan" />
+
+        <item
+            android:id="@+id/nav_list"
+            android:icon="@drawable/ic_exhibitor_list"
+            android:title="Exhibitors' List" />
+        <item
+            android:id="@+id/nav_show_agenda"
+            android:icon="@drawable/ic_show_agenda"
+            android:title="Show Agenda" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+
+        <item android:title="Interact">
+            <menu>
+                <item
+                    android:id="@+id/nav_scan_qr_code"
+                    android:icon="@drawable/ic_scan_code"
+                    android:title="Scan QR Code" />
+                <item
+                    android:id="@+id/nav_badge"
+                    android:icon="@drawable/ic_badge"
+                    android:title="My Badge" />
+                <item
+                    android:id="@+id/nav_scan_history_hall_a"
+                    android:icon="@drawable/ic_scan_history"
+                    android:title="Scan History" />
+            </menu>
+        </item>
+    </group>
+
+</menu>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/how_did_you_get_to_know_about_intimasia"
+            android:textSize="@dimen/label_font_size"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:id="@+id/question_intimasia_field"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/what_brought_to_intimasia_label_text"
+            android:textSize="@dimen/label_font_size"
+            android:textStyle="bold" />
+
+        <!-- What brings to Initimasia-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/business_checkbox"
+                android:onClick="onCheckboxClicked1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/business_intrest_label"
+                android:textSize="@dimen/checkbox_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/networking_checkbox"
+                android:onClick="onCheckboxClicked1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/networking_label"
+                android:textSize="@dimen/checkbox_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/market_survey_checkbox"
+                android:onClick="onCheckboxClicked1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/market_survey_label"
+                android:textSize="@dimen/checkbox_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked1"
+                android:id="@+id/product_knowledge_label"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/product_knowledge_label"
+                android:textSize="@dimen/checkbox_font_size" />
+        </LinearLayout>
+
+        <!--Is this your first time to Intimasia-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/first_time_question_label"
+            android:textSize="@dimen/label_font_size"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/first_time_to_intimasia_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/first_time_question_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:onClick="onRadioButtonClicked0"
+                android:text="@string/yes_label"
+                android:textSize="@dimen/checkbox_font_size" />
+
+            <RadioButton
+                android:id="@+id/first_time_question_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:onClick="onRadioButtonClicked0"
+                android:text="@string/no_label"
+                android:textSize="@dimen/checkbox_font_size" />
+
+        </RadioGroup>
+
+        <!-- Would yout like to subscibe yourself to inner secrets magazine?-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/subscribe_question_label"
+            android:textSize="@dimen/label_font_size"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/subscribe_inner_secret_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/subscribe_question_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:onClick="onRadioButtonClicked1"
+                android:text="@string/yes_label"
+                android:textSize="@dimen/checkbox_font_size" />
+
+            <RadioButton
+                android:id="@+id/subscribe_question_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:onClick="onRadioButtonClicked1"
+                android:text="@string/no_label"
+                android:textSize="@dimen/checkbox_font_size" />
+
+        </RadioGroup>
+
+        <!--Hidden subscribing details-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/subscribing_details">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/subscribing_details1"
+                android:textStyle="italic|bold"
+                android:textSize="@dimen/checkbox_font_size"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/subscribing_details2"
+                android:textStyle="italic"
+                android:textSize="@dimen/checkbox_font_size"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/subscribing_details3"
+                android:textStyle="italic"
+                android:textSize="@dimen/checkbox_font_size"
+                android:layout_marginBottom="12dp"/>
+    </LinearLayout>
+
+        <!-- Would you like to suggest intimiasia to anyone?-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/suggest_intimasia_label"
+            android:textSize="@dimen/label_font_size"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/suggest_intimasia_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/suggest_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:onClick="onRadioButtonClicked2"
+                android:text="@string/yes_label"
+                android:textSize="@dimen/checkbox_font_size" />
+
+            <RadioButton
+                android:id="@+id/suggest_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:onClick="onRadioButtonClicked2"
+                android:text="@string/no_label"
+                android:textSize="@dimen/checkbox_font_size" />
+
+        </RadioGroup>
+        <!-- Hidden form for suggesting someone to view intimasia-->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/suggest_form">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_label_text"
+                android:textSize="@dimen/checkbox_font_size"
+                android:textStyle="italic|bold"/>
+
+            <EditText
+                android:id="@+id/suggest_form_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_label_text"
+                android:textSize="@dimen/checkbox_font_size"
+                android:textStyle="italic|bold"/>
+
+            <EditText
+                android:id="@+id/suggest_form_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number_label_text"
+                android:textSize="@dimen/checkbox_font_size"
+                android:textStyle="italic|bold"/>
+
+            <EditText
+                android:id="@+id/suggest_form_phone_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone" />
+
+
+        </LinearLayout>
+
+
+        <!-- Agree to terms and conditions-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/terms_checkbox"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <CheckBox
+            android:id="@+id/terms_and_condition_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:hint="Tick this box to proceed"
+            android:onClick="onCheckBoxClicked2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/registration_heading"
+            android:textColor="@color/white_color"
+            android:id="@+id/feedback_form_submit"/>
+
+
+    </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>

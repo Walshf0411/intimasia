@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.peppermintcommunications.intimasiaregistration">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:noHistory="true" />
+        <activity android:name=".AppLevelRegistration" />
+        <activity
+            android:name=".HomePage"
+            android:label="@string/title_activity_home_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RegisterIntimasia" />
+        <activity android:name=".UserRegistrationIntimasia" />
+        <activity android:name=".UserRegistrationIntimasia2" />
+        <activity android:name=".FeedbackForm" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <activity
+            android:name=".QRCodeScanner"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name=".LoginIntimasia" />
+        <activity android:name=".FirstStepToRegisteration" />
+        <activity android:name=".RegistrationSuccessfulActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ExhibitorList" />
+        <activity android:name=".ScanHistory" />
+        <activity android:name=".ScanHistory1" />
+        <activity android:name=".ExhibitorDetailActivity" />
+        <activity android:name=".FloorPlan" />
+        <activity android:name=".ShowAgenda" />
+        <activity android:name=".RegisterAsVisitorOrExhibitor" />
+        <activity android:name=".ExhibitorRegistration"></activity>
+    </application>
+
+</manifest>
